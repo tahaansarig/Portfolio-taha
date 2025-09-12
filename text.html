@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Taha - Portfolio</title>
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #eef2f3, #dfe9f3);
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      animation: slideIn 2s ease-in-out;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      animation: fadeInUp 2s ease-in-out;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #2980b9;
+      font-size: 2rem;
+      border-left: 6px solid #3498db;
+      padding-left: 10px;
+    }
+    .about, .education, .skills, .projects, .contact {
+      margin-bottom: 50px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      background: #ecf0f1;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 6px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    ul li:hover {
+      transform: translateX(5px);
+      background: #dfe6e9;
+    }
+    .skills span {
+      display: inline-block;
+      background: #3498db;
+      color: #fff;
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+    .skills span:hover {
+      background: #2980b9;
+    }
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-links a {
+      text-decoration: none;
+      color: #fff;
+      background: #3498db;
+      margin: 8px;
+      padding: 12px;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+    .social-links a:hover {
+      background: #2980b9;
+      transform: scale(1.1);
+    }
+    .cv-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background: #27ae60;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .cv-btn:hover {
+      background: #1e8449;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes slideIn {
+      from {opacity: 0; transform: translateX(-50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Replace profile.jpg with your picture file -->
+    <img src="profile.jpg" alt="Muhammad Taha">
+    <h1>Muhammad Taha</h1>
+    <p>BS Computer Science (5th Semester) | Future AI & Web Developer</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Muhammad Taha, a passionate Computer Science student from Lahore, currently in the 5th Semester of BSCS. I’m motivated to enhance my skills in Web Development, Artificial Intelligence, and Software Engineering. My goal is to become an expert developer with strong communication skills in English and a professional career in technology.</p>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li>BS Computer Science (BSCS) – Superior University (Ongoing, 5th Semester)</li>
+      <li>Intermediate – ICS (Computer Science)</li>
+      <li>Matriculation – Computer Science</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>C++</span>
+      <span>Python</span>
+      <span>Databases (SQL Server)</span>
+      <span>WordPress</span>
+      <span>Digital Marketing</span>
+      <span>Assembly (emu8086)</span>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Gym Management System</b> – C++ (DSA Project)</li>
+      <li><b>Human-Following Robot</b> – Assembly Language (emu8086)</li>
+      <li><b>Wrist Wonders</b> – WordPress Website (Luxury Watch Store)</li>
+      <li><b>Student Management System</b> – PHP & SQL Server</li>
+      <li><b>Chatbot Project</b> – Python (File & Image Input)</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p><b>Email:</b> su92-bscsm-f23-624@superior.edu.pk</p>
+    <p><b>Location:</b> Kot Lakhpat, Lahore, Pakistan</p>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/IRAMKAHUSBAND" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/tahaansarig786" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <!-- Download CV Button -->
+    <div style="text-align: center;">
+      <a href="cv.pdf" download class="cv-btn"><i class="fas fa-download"></i> Download CV</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Muhammad Taha | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
